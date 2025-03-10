@@ -1,0 +1,33 @@
+C:\adb>adb shell uiautomator dump
+java.io.FileNotFoundException: /data/system/theme_config/theme_compatibility.xml: open failed: ENOENT (No such file or directory)
+        at libcore.io.IoBridge.open(IoBridge.java:492)
+        at java.io.FileInputStream.<init>(FileInputStream.java:160)
+        at java.io.FileInputStream.<init>(FileInputStream.java:115)
+        at java.io.FileReader.<init>(FileReader.java:58)
+        at miui.content.res.ThemeCompatibilityLoader.getVersion(ThemeCompatibilityLoader.java:108)
+        at miui.content.res.ThemeCompatibilityLoader.getConfigDocumentTree(ThemeCompatibilityLoader.java:126)
+        at miui.content.res.ThemeCompatibilityLoader.loadConfig(ThemeCompatibilityLoader.java:59)
+        at miui.content.res.ThemeCompatibility.<clinit>(ThemeCompatibility.java:31)
+        at miui.content.res.ThemeCompatibility.isThemeEnabled(ThemeCompatibility.java:111)
+        at android.content.res.MiuiResourcesImpl.<clinit>(MiuiResourcesImpl.java:41)
+        at android.content.res.Resources.<init>(Resources.java:353)
+        at android.content.res.MiuiResources.<init>(MiuiResources.java:49)
+        at android.content.res.Resources.getSystem(Resources.java:233)
+        at android.util.MiuiMultiWindowAdapter.<clinit>(MiuiMultiWindowAdapter.java:84)
+        at android.view.Display.getSize(Display.java:725)
+        at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:110)
+        at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+        at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+        at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:427)
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+        at libcore.io.Linux.open(Native Method)
+        at libcore.io.ForwardingOs.open(ForwardingOs.java:166)
+        at libcore.io.BlockGuardOs.open(BlockGuardOs.java:254)
+        at libcore.io.IoBridge.open(IoBridge.java:478)
+        ... 18 more
+UI hierchary dumped to: /sdcard/window_dump.xml
+
+C:\adb>adb pull /sdcard/window_dump.xml
+/sdcard/window_dump.xml: 1 file pulled, 0 skipped. 0.2 MB/s (2092 bytes in 0.013s)
+
+C:\adb>
