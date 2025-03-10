@@ -7,3 +7,4 @@ Online Layout Inspector
 
 # Выгрузка XML из Android устройства: 
 `C:\adb>adb connect 192.168.0.85:36787`  
+`adb devices`  
