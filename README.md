@@ -17,6 +17,7 @@ C:\Users\user\Desktop\AndroidUiRenderer>npx tsx server/index.ts
 12:14:13 AM [express] POST /api/parse-xml 200 in 27ms :: {"id":1,"xmlContent":"<?xml version='1.0' en…  
 Завершить выполнение пакетного файла [Y(да)/N(нет)]? Y  
 
-# Исправленая версия файла C:\Users\user\Desktop\AndroidUiRenderer\server\index.ts
+# Исправленая версия файла 
+C:\Users\user\Desktop\AndroidUiRenderer\server\index.ts  
 
 ![image](https://github.com/user-attachments/assets/4c311aea-15ff-482b-8f30-cac5910a5d75)
