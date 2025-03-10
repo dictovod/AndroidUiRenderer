@@ -21,3 +21,5 @@ C:\Users\user\Desktop\AndroidUiRenderer>npx tsx server/index.ts
 C:\Users\user\Desktop\AndroidUiRenderer\server\index.ts  
 
 ![image](https://github.com/user-attachments/assets/4c311aea-15ff-482b-8f30-cac5910a5d75)
+
+https://youtu.be/pI0Dmb1QlPY  
