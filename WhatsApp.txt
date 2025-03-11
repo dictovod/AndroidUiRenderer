@@ -1,0 +1,68 @@
+adb shell am start -n com.whatsapp/com.whatsapp.accountsync.CallContactLandingActivity
+adb shell am start -n com.whatsapp/com.whatsapp.SetAsProfilePhoto
+adb shell am start -n com.whatsapp/com.whatsapp.TextAndDirectChatDeepLink
+adb shell am start -n com.whatsapp/com.whatsapp.xfamily.accountlinking.ui.AccountLinkingWebAuthActivity
+adb shell am start -n com.whatsapp/com.whatsapp.Conversation
+adb shell am start -n com.whatsapp/com.whatsapp.AcceptInviteLinkActivityDeepLink
+adb shell am start -n com.whatsapp/com.whatsapp.VerifySmsDeepLink
+adb shell am start -n com.whatsapp/com.whatsapp.registration.verifyphone.VerifyPhoneNumber
+adb shell am start -n com.whatsapp/com.whatsapp.stickers.thirdpartystickers.AddThirdPartyStickerPackActivity
+adb shell am start -n com.whatsapp/com.whatsapp.settings.SettingsNotifications
+adb shell am start -n com.whatsapp/com.whatsapp.accountsync.LoginActivity
+adb shell am start -n com.whatsapp/com.whatsapp.settings.SettingsDataUsageActivity
+
+adb shell am start -n com.whatsapp/com.whatsapp.HomeActivity
+adb shell input keyevent 22
+adb shell input keyevent 22
+adb shell input keyevent 22
+
+
+com.whatsapp/com.whatsapp.voipcalling.VoipActivity
+
+android.intent.action.ANSWER
+com.whatsapp
+com.whatsapp.voipcalling.VoipActivity
+
+android.intent.action.MAIN
+com.whatsapp
+com.whatsapp.HomeActivity
+
+adb shell am start -n android.widget.TextView
+adb shell am start -n android.widget.RelativeLayout
+adb shell am start -n com.whatsapp/.Main
+adb shell am start -a android.intent.action.VIEW -d "https://wa.me/"
+adb shell monkey -p com.whatsapp -c android.intent.category.LAUNCHER 1
+
+C:\adb>adb shell getevent -l
+add device 1: /dev/input/event4
+  name:     "uinput-fpc"
+add device 2: /dev/input/event0
+  name:     "ACCDET"
+add device 3: /dev/input/event3
+  name:     "fpc_irq@fingerprint"
+add device 4: /dev/input/event2
+  name:     "NVTCapacitiveTouchScreen"
+add device 5: /dev/input/event1
+  name:     "mtk-kpd"
+/dev/input/event2: EV_ABS       ABS_MT_TRACKING_ID   000013d0
+/dev/input/event2: EV_KEY       BTN_TOUCH            DOWN
+/dev/input/event2: EV_ABS       ABS_MT_POSITION_X    000003d8
+/dev/input/event2: EV_ABS       ABS_MT_POSITION_Y    0000089e
+/dev/input/event2: EV_ABS       ABS_MT_TOUCH_MAJOR   0000000a
+/dev/input/event2: EV_SYN       SYN_REPORT           00000000
+/dev/input/event2: EV_ABS       ABS_MT_TOUCH_MAJOR   00000000
+/dev/input/event2: EV_ABS       ABS_MT_TRACKING_ID   ffffffff
+/dev/input/event2: EV_KEY       BTN_TOUCH            UP
+/dev/input/event2: EV_SYN       SYN_REPORT           00000000
+/dev/input/event2: EV_ABS       ABS_MT_TRACKING_ID   000013d1
+/dev/input/event2: EV_KEY       BTN_TOUCH            DOWN
+/dev/input/event2: EV_ABS       ABS_MT_POSITION_X    00000068
+/dev/input/event2: EV_ABS       ABS_MT_POSITION_Y    000008db
+/dev/input/event2: EV_ABS       ABS_MT_TOUCH_MAJOR   0000000a
+/dev/input/event2: EV_SYN       SYN_REPORT           00000000
+/dev/input/event2: EV_ABS       ABS_MT_TOUCH_MAJOR   00000000
+/dev/input/event2: EV_ABS       ABS_MT_TRACKING_ID   ffffffff
+/dev/input/event2: EV_KEY       BTN_TOUCH            UP
+/dev/input/event2: EV_SYN       SYN_REPORT           00000000
+ 
+C:\adb>adb shell input tap 984 2206
